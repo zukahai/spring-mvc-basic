@@ -36,7 +36,6 @@ public class Sinhvien implements Serializable {
             inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Role> roles = new HashSet<>();
 
-   
 
     @OneToMany(mappedBy = "sinhvien", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Diem> diems = new HashSet<>();
